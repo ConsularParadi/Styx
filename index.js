@@ -211,3 +211,16 @@ Bg3.addEventListener('click', () => {
 
 // NOTIFICATIONS
 // opens modal
+const openNotificationsModal = () => {
+    notificationsModal.style.display = 'grid';
+}
+
+const closeNotificationsModal = (e) => {
+    if(e.target.classList.contains('notifications-popup')) {
+        notificationsModal.style.display = 'none';
+    }
+    window.location.reload();
+}
+
+notifications.addEventListener('click', openNotificationsModal);
+notificationsModal.addEventListener('click', closeNotificationsModal);
