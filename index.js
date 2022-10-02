@@ -17,6 +17,10 @@ const Bg1 = document.querySelector('.bg-1');
 const Bg2 = document.querySelector('.bg-2');
 const Bg3 = document.querySelector('.bg-3');
 
+// NOTIFICATIONS
+const notifications = document.querySelector('#notifications');
+const notificationsModal = document.querySelector('.notifications-popup');
+
 // SIDEBAR
 // remove active class from all menu items
 
@@ -204,3 +208,6 @@ Bg3.addEventListener('click', () => {
     Bg2.classList.remove('active');
     changeBG();
 })
+
+// NOTIFICATIONS
+// opens modal
